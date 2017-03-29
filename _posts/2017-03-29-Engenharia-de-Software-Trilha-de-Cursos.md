@@ -50,6 +50,8 @@ Cursos Livres de Programação:
 - (%) Software Development (The University of British Columbia)
 
 Agendar na Sequência: 
+
+
 Course: Computer Graphics https://www.edx.org/course/computer-graphics-uc-san-diegox-cse167x
 Course: Artificial Intelligence https://www.edx.org/course/artificial-intelligence-uc-berkeleyx-cs188-1x#!
 Course: Machine Learning https://www.coursera.org/learn/machine-learning
