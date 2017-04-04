@@ -24,4 +24,21 @@ title: GIT - Um guia rápido
 
 - git remote add origin url-do-repositorio-remoto: configura o repositório remoto para o projeto.
 
-- git push apelido-do-repositorio branch-criado : Envia as alteraçes para o repositório remoto. 
+- git push apelido-do-repositorio branch-criado : Envia as alteraçes para o repositório remoto. A flag -u indica que a branch local deve ser igual à branch remota com o mesmo alias.
+
+- git push -d remote-alias branch-alias Remove o branch especificado.
+
+- git branch branch-alias: Cria um novo branch com o alias especificado. Com a flag -r exibe as branches remotas.
+  git branch branch-alias -b: Cria um novo branch e altera para a branch atual.
+  git branch -t branch-alias origin/correspondent-remote-branch-alias: Cria um branch com um branch remoto correspondente, monitorando as diferenças já no momento da criação.
+ 
+  
+- git checkout alias-branch-destino: Altera o working branch para o branch de destino especificado.
+
+- git fetch origin: Verifica todas as atualizaçes do repositório origin.
+
+- Conflitos:
+
+- Ao utilizar o comando git push, caso hajam conflitos no arquivo que se deseja subir para o repositório remoto, o GIT alertará o conflito. Para indicar que o conflito foi selecionado, usar os comandos'git add arquivo', 'git commit arquivo -m "mensagem do commit". Desta forma será indicado que o conflito foi solucionado e o git push poderá ser executado.'
+
+- O Git utiliza os caracteres >, < e =. Entre o < e o = fica o conteúdo antigo e entre o > e = fica o conteúdo novo.
