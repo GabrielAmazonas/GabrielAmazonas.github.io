@@ -8,6 +8,7 @@ title: GIT - Um guia rápido
 - git init : Utilize este comando de dentro da pasta de seu projeto para iniciar um novo repositório local.
 
 - git config: Para configurar o email e usuário. Com a flag --global, o usuário é configurado para todos os repositórios da máquina.
+
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 
