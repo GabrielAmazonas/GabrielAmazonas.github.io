@@ -1,7 +1,8 @@
 ---
 layout: post
-title: GIT: Guia Rápido
+title: GIT - Um guia rápido
 ---
+
 
 - Download do GIT: https://git-scm.com/download
 - git init : Utilize este comando de dentro da pasta de seu projeto para iniciar um novo repositório local.
