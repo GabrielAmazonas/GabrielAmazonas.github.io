@@ -42,3 +42,24 @@ title: GIT - Um guia rápido
 - Ao utilizar o comando git push, caso hajam conflitos no arquivo que se deseja subir para o repositório remoto, o GIT alertará o conflito. Para indicar que o conflito foi selecionado, usar os comandos'git add arquivo', 'git commit arquivo -m "mensagem do commit". Desta forma será indicado que o conflito foi solucionado e o git push poderá ser executado.'
 
 - O Git utiliza os caracteres >, < e =. Entre o < e o = fica o conteúdo antigo e entre o > e = fica o conteúdo novo.
+
+- Trabalhando com múltiplos branches:
+
+- git branch checkout -b nomeDoBranch : Cria e entra na branch 
+- git checkout master & git pull antes de atualizar o branch master; 
+- git merge nomeDoBranch: Irá trazer os commits do branch indicado para a branch atual.
+- git push enviará as novas alterações para o repositório.
+- Em outro branch, ao realizar: git checkout master e git pull, irão ser trazidas as alterações mais recentes da branch master.
+- git rebase atualiza uma branch com base em outra.Exemplo: git rebase master desenvolvimento: Atualizará a branch desenvolvimento com base na branch master.
+- após o git rebase, o branch selecionado estará atualizado, com os commits realizados no próprio branch e os commits realizados na master. 
+- agora é possível voltar para a branch master através do comando git checkout master e trazer os commits da branch desenvolvimento através do comando git merge desenvolvimento. Para enviar as alterações do branch master para o repositório remoto, basta utilizar novamente o comando git push.
+
+
+- Resolvendo conflitos entre os branches:
+- Caso ao rodar o comando git pull já hajam atualizações do branch master, o usuário deverá usar o git rebase master desenvolvimento para atualizar sua branch de desenvolvimento atual com base na branch master do repositorio.
+
+- Ao ocorrer o conflito, o GIT indicará em que arquivo o conflito foi gerado. Após solucionar o conflito, o usuário deverá usar o comando git add arquvioDoConflito.formato para adicionar novamente o arquivo ao staging area e prepará-lo para o commit
+
+- O usuário deverá utilizar o git rebase --continue para seguir com o rebase que foi pausado pelo conflito.
+
+- Os conflitos são gerados Commit por Commit, o que torna mais fácil a resolução.
