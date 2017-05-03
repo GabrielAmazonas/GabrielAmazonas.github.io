@@ -93,3 +93,5 @@ title: GIT - Um guia rápido
 - Com estes comandos, o git trará os commits realizados entre o commid bad e o commit good, um a um e pedirá para que o desenvolvedor especifique se este é um commit good ou bad.
 - Este modo irá alternar entre os commits do intervalo selecionado de acordo com o que o desenvolvedor sinalziar como git good ou git bad.
 
+
+
