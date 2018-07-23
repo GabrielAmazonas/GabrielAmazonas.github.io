@@ -18,4 +18,6 @@ title: Docker - Um guia rápido
  
  -`docker ps -a` Listará todos os containers
  
+ - `docker stop $(docker ps -aq)`
+ 
  
