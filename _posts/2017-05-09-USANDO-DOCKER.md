@@ -18,7 +18,11 @@ title: Docker - Um guia rápido
  
  -`docker ps -a` Listará todos os containers.
  
- - `docker stop $(docker ps -aq)` Irá parar o último container executado.
+ - `docker stop $(docker ps -aq)` Irá parar todos os containers em execução.
+ 
+ - `docker rm $(docker ps -aq)` Removerá todos os containers.
+ 
+ - `docker rmi $(docker images -q)` Removerá todas as imagens.
  
  - `docker logs nomeDoContainer` Irá listar os logs do container especificado.
  
